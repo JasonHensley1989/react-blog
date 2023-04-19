@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        div
+        <h1>My Blogs</h1>
       </div>
     </div>
   );
