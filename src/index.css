@@ -1,3 +1,44 @@
-.home {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Oswald';
+    color: #737e8b;
+}
+
+body {
+    background-color: #fffdf7;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom:  1px solid #a8b7c8;
+}
+
+.navbar h1 {
+    color: #737e8b;
+}
+
+.navbar .links {
+    margin-left: auto;
+}
+
+.navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.navbar a:hover {
+    color: #ead7c7;
+}
+
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
 }
