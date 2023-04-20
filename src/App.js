@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="App">
       <div className="content">
-        <h1>Blog Post Creation using React and Fetch</h1>
+        <h1 className="title">Daily Blogs</h1>
       </div>
     </div>
   );
