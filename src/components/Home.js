@@ -11,7 +11,6 @@ const Home = () => {
     
 
     const handleDelete = (id) => {
-        console.log("CLicked");
         const newBlogs = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlogs);
     }
