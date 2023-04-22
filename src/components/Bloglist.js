@@ -1,10 +1,6 @@
 import React from 'react';
 
-const Bloglist = ({ blogs, title }) => {
-
-  // destructured version used instead of just bringing in props, simplifies the code.
-  // const blogs = props.blogs;
-  // const title = props.title;
+const Bloglist = ({ blogs, title, handleDelete }) => {
 
   return (
     <div className="blog-list">
@@ -14,7 +10,7 @@ const Bloglist = ({ blogs, title }) => {
                     <h2>{ blog.title }</h2>
                     <p>{ blog.body }</p>
                     <p>{ blog.author}</p>
-                    <button className="delete">Delete</button>
+                    <button onClick={() => handleDelete(blog.id)}>Delete</button>
                 </div>
             ))}
     </div>
