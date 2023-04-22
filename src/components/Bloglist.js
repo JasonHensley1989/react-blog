@@ -14,6 +14,7 @@ const Bloglist = ({ blogs, title }) => {
                     <h2>{ blog.title }</h2>
                     <p>{ blog.body }</p>
                     <p>{ blog.author}</p>
+                    <button className="delete">Delete</button>
                 </div>
             ))}
     </div>
