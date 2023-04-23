@@ -17,15 +17,14 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log("Use effect ran");
-        console.log(name);
-    }, [name]);
+        
+    }, []);
 
     return (
         <div className='home'>
            <Bloglist blogs={blogs} title="All Blogs" handleDelete={handleDelete}/>
-           <button onClick={() => setName("Jason H.")}>Change Name</button>
-           <p>{ name }</p>
+           {/* <button onClick={() => setName("Jason H.")}>Change Name</button> */}
+           {/* <p>{ name }</p> */}
         </div>
   )
 }
