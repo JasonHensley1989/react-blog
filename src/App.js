@@ -1,17 +1,20 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import './index.css'
+import './index.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const title = "The Daily Blogger";
 
   return (
-    <div className="App">
-       <Navbar />
-      <div className="content">
-       <Home />
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+        <Home />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
