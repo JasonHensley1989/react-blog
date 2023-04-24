@@ -22,11 +22,15 @@ body {
 
 .navbar h1 {
     color: #737e8b;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .navbar .links {
     margin-left: auto;
+}
+
+.link-details{
+    text-decoration: none;
 }
 
 .navbar a {
@@ -57,7 +61,27 @@ body {
 }
 
 .blog-preview h2 {
-    font-size: 2opx;
+    font-size: 20px;
     color: #a8b7c8;
     margin-bottom: 8px;
+}
+
+/* Blog details page */
+.blog-details h2 {
+    font-size: 30px;
+    color: #737e8b;
+    margin-bottom: 10px;
+}
+
+.blog-details div {
+    margin: 20px 0;
+}
+
+.blog-details button {
+    background: #737e8b;
+    color: #ead7c7;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
 }

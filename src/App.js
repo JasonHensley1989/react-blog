@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Create from "./Create";
 import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import BlogDetails from "./components/BlogDetails";
 
 function App() {
   const title = "The Daily Blogger";
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path='/create'>
               <Create />
+          </Route>
+          <Route path='/blogs/:id'>
+              <BlogDetails />
           </Route>
         </Switch>
         </div>
