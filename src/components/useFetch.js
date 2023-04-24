@@ -28,12 +28,16 @@ const useFetch = (url) => {
                     setError(null)
                 })
                 .catch(err => {
-                    setIsPending(false)
-                    setError(err.message)
+                    if(err.name === "AbortError") {
+                        console.log("Fetch aborted");
+                    } else {
+                        setIsPending(false)
+                        setError(err.message)
+                    }    
                 })
             }, 1000);
                
-            return () => console.log("Cleanup");
+            return () => abortControl.abort();
         }, [url]);
 
         return { data, isPending, error }
