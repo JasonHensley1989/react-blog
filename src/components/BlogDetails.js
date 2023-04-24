@@ -21,7 +21,7 @@ const BlogDetails = () => {
         { error && <div>{ error }</div>}
         { blog && (
           <article>
-            <h2>{ blog.title }</h2>
+            <h2 required>{ blog.title }</h2>
             <p>Written by: { blog.author }</p>
             <div required>{ blog.body }</div>
             <button onClick={handleClick}>Delete</button>
