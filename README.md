@@ -13,3 +13,6 @@ elements of React such as props, class components, etc...
 /blogs/{ id }      GET            Fetch a single blog
 /blogs             POST           Add a new blog
 /blogs/{ id }      DELETE         Delete a blog
+
+## Important code functions
+npx json-server --watch db.json --port 8000 -runs json server on port 8000
