@@ -7,7 +7,7 @@ import BlogDetails from "./components/BlogDetails";
 import NotFound from "./components/NotFound";
 
 function App() {
-  const title = "The Daily Blogger";
+  // const title = "The Daily Blogger";
 
   return (
     <Router>
