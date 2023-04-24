@@ -16,3 +16,6 @@ elements of React such as props, class components, etc...
 
 ## Important code functions
 npx json-server --watch db.json --port 8000 -runs json server on port 8000
+
+## Next MVPs
+Deploy on github using firebase as back-end.
