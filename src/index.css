@@ -77,9 +77,35 @@ body {
     margin: 20px 0;
 }
 
-.blog-details button {
-    background: #737e8b;
-    color: #ead7c7;
+/* Blog Form */
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.create label {
+    text-align: left;
+    display: block;
+}
+
+.create h2 {
+    font-size: 30px;
+    color: #737e8b;
+    margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #737e8b;
+    box-sizing: border-box;
+    display: block;
+}
+.create button {
+    background: #a8b7c8;
+    color: #fffdf7;
     border: 0;
     padding: 8px;
     border-radius: 8px;
