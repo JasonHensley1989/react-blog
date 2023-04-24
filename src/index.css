@@ -111,3 +111,13 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
+
+.blog-details button {
+    background: #a8b7c8;
+    color: #fffdf7;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
