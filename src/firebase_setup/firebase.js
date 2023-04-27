@@ -1,5 +1,11 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from '@firebase/firestore';
+import { getFirestore, collection, getDocs } from '@firebase/firestore';
+
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// export const firestore = getFirestore(app);
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -11,6 +17,24 @@ const firebaseConfig = {
   appId: "1:9591758421:web:1063463b899f53423b7edc"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const firestore = getFirestore(app);
+// Reference to Firstore DB
+const db = getFirestore(app)
+
+// Read data from a Firestore collection
+const blogsRef = collection(db, "blogs");
+getDocs(blogsRef).then((querySnapshot) => {
+  querySnapshot.forEach((doc) => {
+    console.log(doc.id, " => ", doc.data());
+  });
+});
+
+// Add the data to Firestore
+data.blogs.forEach((blog) => {
+  db.collection('blogs').add(blog)
+    .then((docRef) => {
+      console.log(`Document written with ID: ${docRef.id}`);
+    })
+    .catch((error) => {
+      console.error(`Error adding document: ${error}`);
+    });
+});

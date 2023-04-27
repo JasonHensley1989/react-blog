@@ -5,20 +5,25 @@ import './index.css';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BlogDetails from "./components/BlogDetails";
 import NotFound from "./components/NotFound";
-import handleSubmit from "./handles/handlesubmit";
+// import handleSubmit from "./handles/handlesubmit";
 import { useRef } from 'react';
+
+const data = require('./db.json')
 
 function App() {
   // const title = "The Daily Blogger";
   // firebase app
   // const firebaseApp = firebase.apps[0];
-  const dataRef = useRef()
 
-  const submitHandler = (e) => {
-    e.preventDefault()
-    handleSubmit(dataRef.current.value)
-    dataRef.current.value = ""
-  }
+  console.log(data);
+  const dataRef = useRef();
+
+
+  // const submitHandler = (e) => {
+  //   e.preventDefault()
+  //   handleSubmit(dataRef.current.value)
+  //   dataRef.current.value = ""
+  // }
 
   return (
     <Router>
@@ -40,10 +45,10 @@ function App() {
             <NotFound />
           </Route>
         </Switch>
-          <form onSubmit={submitHandler}>
+          {/* <form onSubmit={submitHandler}>
             <input type= "text" ref={dataRef} />
             <button type = "submit">Save</button>
-          </form>
+          </form> */}
         </div>
       </div>
       {/* <code>
