@@ -6,17 +6,17 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BlogDetails from "./components/BlogDetails";
 import NotFound from "./components/NotFound";
 // import handleSubmit from "./handles/handlesubmit";
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
-const data = require('./db.json')
+// const data = require('./db.json')
 
 function App() {
   // const title = "The Daily Blogger";
   // firebase app
   // const firebaseApp = firebase.apps[0];
 
-  console.log(data);
-  const dataRef = useRef();
+  // console.log(data);
+  // const dataRef = useRef();
 
 
   // const submitHandler = (e) => {
